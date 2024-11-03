@@ -1,0 +1,335 @@
+/* логотип, сети, телефон */
+.header_contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+   
+}
+.contact_logo {
+    display: flex;
+    justify-content: center;
+}
+.header_img__size {
+    max-width: 70%; 
+    height: auto; 
+    display: block; 
+}
+.contact_tel > a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Меню на основном экране */
+.header {
+    background-color: var(--background-color);
+}
+.header_menu {
+   height: 15vh; 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style-type: none;
+}
+.header_menu > a{
+   color: var(--text-color);
+   font-size: 1.5rem;
+   line-height: 1.5;
+   text-decoration: none;
+   font-weight: bolder;
+}  
+
+
+/* белая полоса */
+.header_white-line {
+    width: 80%;          
+    height: 2px;        
+    background-color: white; 
+    margin: 0 auto;    
+}
+       
+
+/* Бургер menu */
+       @media (max-width: 768px) {
+           .menu.show {
+               display: block; 
+           }
+           .burger-icon {
+               display: block;
+               cursor: pointer;
+               width: 30px;
+               height: 30px;
+               position: absolute;
+               top: 15px;
+               right: 15px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+           }
+           .burger-icon div {
+               width: 30px;
+               height: 4px;
+               background-color: white;
+               border-radius: 2px;
+               transition: 0.3s;
+           }
+     
+           .menu {
+            max-height: 0; 
+            opacity: 0; 
+            visibility: hidden;
+            overflow: hidden; 
+            position: absolute;
+            background-color: var(--background-color);
+            height: 50vh;
+            width: 100%;
+            transition: max-height 0.4s ease, opacity 0.4s ease; 
+            z-index: 1;
+        }
+           
+        .menu a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+            font-weight: bolder;
+            padding: 10px;
+            border-radius: 3px;
+            transition: background-color 0.1s;
+            text-align: center;
+        }
+        .menu a:hover {
+            background-color: #555;
+        }
+        .menu.show {
+         max-height: 300px; 
+         opacity: 1; 
+         visibility: visible;
+     }
+     .header_white-line {
+         background-color: var(--text-color);
+     }
+ 
+    }
+
+
+    /* блок 2 с картинкой */
+ .main {
+     background-image: url('../images/cover.DNG'); 
+     background-size: cover; 
+     background-position: center; 
+     height: 100vh;
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     color: white; 
+     text-align: center; 
+    
+}
+.main_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_text__paragraf {
+    border: 2px solid #FAB803;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    max-width: 70%;
+    filter: brightness(1.1);
+}
+ .main_text__paragraf > a {
+    text-decoration: none;
+    color: #FAB803;
+    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    filter: brightness(1.1);
+ }  
+.main_text__bolder {
+    font-weight: bolder;
+}
+
+.main_text__header {
+    font-size: 4rem;
+    color: #FAB803;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    filter: brightness(1.1);
+    
+}
+
+@media (max-width: 768px) {
+    .main_text__paragraf {
+        font-size: 2rem; 
+    }
+    
+    .main_text__header {
+        font-size: 3rem; 
+    }
+}
+
+
+
+/* блок 3 карусель */
+
+.carousel {
+    display: flex;
+    
+    transition: transform 0.5s ease; 
+}
+
+.carousel img {
+    width: 800%; 
+    flex-shrink: 0;
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+
+
+.carousel-container {
+   
+    position: relative;
+    width: 50%; 
+ 
+    max-width: 800px; 
+    margin: 3rem auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease; 
+    width: 100%; 
+}
+
+.carousel img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.indicator {
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%; 
+    background-color: #bbb; 
+    margin: 0 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.indicator.active {
+    background-color: #FAB803; 
+}
+/* .wrapper_carousel {
+    width: 50%;
+} */
+
+@media (max-width: 768px) {
+    .indicator {
+        width: 5px; 
+        height: 5px; 
+        margin: 0 3px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+     
+       
+       
+
+
+
+
+

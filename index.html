@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бургер-меню</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/assets.css">
+    <link rel="stylesheet" href="./CSS/variables.css">
+</head>
+<body>
+<header>
+   <nav class="header">
+    <div class="header_burger">
+       <!-- Бургер-иконка -->
+       <div class="burger-icon" onclick="toggleMenu()">
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+
+       <!-- Хеадер меню -->
+       <div class="header_contact">
+        <div class="contact_net">
+           <a href="#" target="_blank"><img src="./images/facebook.svg" alt="facebook_logo" width="30px" height="30px"></a>
+           <a href="#" target="_blank"><img class="contact_net__pading" src="./images/instagram.svg" alt="instagram_logo" width="30px" height="30px"></a>
+           <a href="mailto:ruban25121987@yandex.ru"><img src="./images/mailto.png" alt="mailto_logo" width="30px" height="30px"></a>
+        </div>
+        
+        <div class="contact_logo">
+           <img class="header_img__size" src="./images/Sufit King.png" alt="logo">
+        </div>
+        
+        <div class="contact_tel">
+           <a href="tel:+375336211606">+375338211606</a>
+        </div>
+    </div>
+
+    <!-- белая/золотая полоса -->
+    <div class="header_white-line"></div>
+
+    <!-- Выпадающее меню -->
+    <div class="menu header_menu" id="dropdownMenu">
+        <a href="#types">RODZAJE SUFITÓW</a>
+        <a href="#supports">WSPOŁPRACA</a>
+        <a href="#gallery">GALERIA</a>
+        <a href="#quatation">WYCENA</a>
+        <a href="#about">O NAS</a>
+        <a href="#contact">KONTAKT</a>
+    </div>
+</div>
+</nav>
+</header>
+<main>
+<div class="main">
+    <!-- Блок 2 бэкграунд картинка -->
+    <div class="main_text">
+        <h1 class="main_text__header">Przyszłość w Twoim domu</h1>
+        <div class="main_text__paragraf">
+            <a href="#">Umów się na <span class="main_text__bolder">bezpłatny pomiar</span></a>
+        </div>
+    </div>
+</div>
+
+
+<!-- блок 3 карусель -->
+<div class="wrapper_carousel">
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="./images/images carousel/ad_4.jpeg" alt="img1">
+            <img src="./images/images carousel/IMG_0221.JPG" alt="img1">
+            <img src="./images/images carousel/IMG_0315.JPG" alt="img2">
+            <img src="./images/images carousel/IMG_0316.JPG" alt="img3">
+            <img src="./images/images carousel/IMG_0317.JPG" alt="img4">
+            <img src="./images/images carousel/IMG_0318.JPG" alt="img5">
+            <img src="./images/images carousel/IMG_0319.JPG" alt="img6">
+            <img src="./images/images carousel/IMG_0321.JPG" alt="img7">
+            <img src="./images/images carousel/IMG_0322.JPG" alt="img8">
+            <img src="./images/images carousel/IMG_0324.JPG" alt="img9">
+            <img src="./images/images carousel/IMG_0323.JPG" alt="img10">
+            <img src="./images/images carousel/IMG_0325.JPG" alt="img11">
+            <img src="./images/images carousel/IMG_0327.JPG" alt="img12">
+            <img src="./images/images carousel/IMG_0329.JPG" alt="img13">
+            <img src="./images/images carousel/IMG_0331.JPG" alt="img14">
+            <img src="./images/images carousel/IMG_0333.JPG" alt="img15">
+            <img src="./images/images carousel/IMG_0335.JPG" alt="img16">
+            <img src="./images/images carousel/IMG_0339.JPG" alt="img17">
+            <img src="./images/images carousel/IMG_1940.JPG" alt="img18">
+            <img src="./images/images carousel/IMG_1941.JPG" alt="img19">
+            <img src="./images/images carousel/IMG_1942.JPG" alt="img20">
+            <img src="./images/images carousel/IMG_1943.JPG" alt="img21">
+            <img src="./images/images carousel/IMG_1944.JPG" alt="img22">
+            <img src="./images/images carousel/IMG_1945.JPG" alt="img23">
+            <img src="./images/images carousel/IMG_1946.JPG" alt="img24">
+            <img src="./images/images carousel/IMG_1951.JPG" alt="img25">
+            <img src="./images/images carousel/IMG_1952.JPG" alt="img26">
+            <img src="./images/images carousel/IMG_1955.JPG" alt="img27">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-button next" onclick="nextSlide()">❯</button>
+    </div>
+    <div class="carousel-indicators">
+        <!-- Точки будут добавлены динамически через JavaScript -->
+    </div>
+</div>
+
+
+<div class="wrapper_grid">
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <script src="./script.js"></script>
+</body>
+</html>
