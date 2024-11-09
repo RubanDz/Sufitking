@@ -521,9 +521,42 @@
 
 
 
+/* блок реклама контейнер лого*/
+.logo-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.wrapper-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 33%;
+    padding: 1.5rem;
+    
+}
+.image_icons_container {
+    width: 150px;
+    height: 150px;
+    background-color:#FAB803;
+    border-radius: 50%;
+}
+.image_icons > img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 24px;
+    left: 24px;
+}
 
-
+@media (max-width:930px) {
+    .logo-icons-container {
+        flex-direction: column;
+    }
+    .wrapper-icons {
+        padding: 1rem;
+    }
+}
 
 
 
